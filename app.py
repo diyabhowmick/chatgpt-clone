@@ -93,7 +93,7 @@ def chat():
         bot_response = generate_bot_response(user_message)
 
         # Save to Supabase
-        # save_to_database(user_message, bot_response)
+        save_to_database(user_message, bot_response)
 
         return jsonify({
             'response': bot_response,
